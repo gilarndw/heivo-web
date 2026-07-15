@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  /* HEIVO Brand Colors */
+  --color-brand-navy: #1A2942;
+  --color-brand-blue: #0056D2;
+  --color-brand-hover: #0043A4;
+  --color-brand-light: #F8FAFC;
+  --color-brand-dark: #334155;
+
+  /* Fonts */
+  --font-heading: var(--font-montserrat);
+  --font-body: var(--font-inter);
+
+  /* Shadow */
+  --shadow-soft: 0 4px 20px rgba(0,0,0,.05);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+}
