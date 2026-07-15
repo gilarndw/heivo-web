@@ -21,7 +21,7 @@ export async function POST(request: Request) {
     // 2. Kirim Notifikasi ke Tim Sales HEIVO
     await resend.emails.send({
       from: 'Heivo Support <onboarding@resend.dev>',
-      to: 'support@hiro-electric.id',
+      to: 'made26gilang@gmail.com',
       subject: `RFQ Baru dari ${name}`,
       html: `
         <h2>Permintaan Penawaran (RFQ)</h2>
