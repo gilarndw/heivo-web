@@ -2,7 +2,7 @@
 
 import { motion, Variants } from "framer-motion";
 import Image from "next/image";
-import { ShieldCheck, CheckCircle } from 'lucide-react';
+import { ShieldCheck, CheckCircle, CheckCircle2} from 'lucide-react';
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 30 },
@@ -74,6 +74,16 @@ const certs = [
       "Perlindungan Konsumen",
       "Keamanan Produk",
       "Kualitas Terjamin",
+    ],
+  },
+  {
+    title: "SPM PLN",
+    subtitle: "Standar Pengawasan Mutu PLN",
+    image: "/images/SPM.jpg",
+    features: [
+      "Jaminan Mutu",
+      "Digunakan pada instalasi PLN",
+      "Memenuhi Standar PLN",
     ],
   },
 
@@ -306,7 +316,196 @@ export default function SertifikasiHero() {
   ))}
 </motion.div>
       </div>
-    </section> 
+    </section>
+    <section className="py-24 bg-white">
+  <div className="container mx-auto px-6 max-w-7xl">
+
+    {/* Section Header */}
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
+      variants={fadeUp}
+      className="text-center mb-20"
+    >
+      <span className="text-brand-blue font-semibold uppercase tracking-[0.2em] text-sm">
+        QUALITY COMMITMENT
+      </span>
+
+      <h2 className="text-4xl md:text-5xl font-heading font-bold text-brand-navy mt-4 mb-6">
+        Komitmen Kami terhadap Kualitas
+      </h2>
+
+      <p className="max-w-3xl mx-auto text-lg text-brand-dark leading-relaxed">
+        Di PT Hiro Electric Industries, kualitas bukan hanya hasil akhir,
+        melainkan bagian dari setiap proses produksi. Mulai dari pemilihan
+        material hingga inspeksi akhir, kami menerapkan sistem pengendalian
+        mutu yang memastikan setiap produk memenuhi standar nasional maupun
+        internasional.
+      </p>
+    </motion.div>
+
+    <div className="grid lg:grid-cols-2 gap-16 items-center">
+
+      {/* LEFT IMAGE */}
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={fadeUp}
+      >
+        <div className="relative h-[550px] rounded-3xl overflow-hidden shadow-2xl group">
+
+          <Image
+            src="/images/material.jpg"
+            alt="Quality Control"
+            fill
+            className="object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+
+          {/* Dark Gradient */}
+          <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/70 via-transparent to-transparent" />
+
+          {/* Floating Badge */}
+          <div className="absolute bottom-8 left-8 bg-white rounded-2xl shadow-xl px-6 py-5">
+
+            <p className="text-3xl font-bold text-brand-blue">
+              100%
+            </p>
+
+            <p className="text-sm text-brand-dark">
+              Quality Inspection
+            </p>
+
+          </div>
+
+        </div>
+      </motion.div>
+
+      {/* RIGHT CONTENT */}
+      <motion.div
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="space-y-6"
+      >
+
+        {/* Card 1 */}
+        <div className="group rounded-2xl border border-gray-200 p-6 hover:border-brand-blue hover:shadow-lg transition-all duration-300">
+
+          <div className="flex gap-4">
+
+            <CheckCircle2
+              size={28}
+              className="text-brand-blue mt-1 flex-shrink-0"
+            />
+
+            <div>
+
+              <h3 className="text-xl font-heading font-bold text-brand-navy mb-2">
+                Material Berkualitas
+              </h3>
+
+              <p className="text-gray-600 leading-7">
+                Seluruh material dipilih berdasarkan spesifikasi teknis
+                yang ketat untuk menjamin daya tahan dan performa produk.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Card 2 */}
+        <div className="group rounded-2xl border border-gray-200 p-6 hover:border-brand-blue hover:shadow-lg transition-all duration-300">
+
+          <div className="flex gap-4">
+
+            <CheckCircle2
+              size={28}
+              className="text-brand-blue mt-1 flex-shrink-0"
+            />
+
+            <div>
+
+              <h3 className="text-xl font-heading font-bold text-brand-navy mb-2">
+                Proses Produksi Terkontrol
+              </h3>
+
+              <p className="text-gray-600 leading-7">
+                Setiap tahapan produksi diawasi menggunakan prosedur kerja
+                yang terdokumentasi untuk menjaga konsistensi mutu.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Card 3 */}
+        <div className="group rounded-2xl border border-gray-200 p-6 hover:border-brand-blue hover:shadow-lg transition-all duration-300">
+
+          <div className="flex gap-4">
+
+            <CheckCircle2
+              size={28}
+              className="text-brand-blue mt-1 flex-shrink-0"
+            />
+
+            <div>
+
+              <h3 className="text-xl font-heading font-bold text-brand-navy mb-2">
+                Pemeriksaan Menyeluruh
+              </h3>
+
+              <p className="text-gray-600 leading-7">
+                Produk melalui proses inspeksi dan pengujian sebelum
+                dipasarkan untuk memastikan keamanan dan keandalannya.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Card 4 */}
+        <div className="group rounded-2xl border border-gray-200 p-6 hover:border-brand-blue hover:shadow-lg transition-all duration-300">
+
+          <div className="flex gap-4">
+
+            <CheckCircle2
+              size={28}
+              className="text-brand-blue mt-1 flex-shrink-0"
+            />
+
+            <div>
+
+              <h3 className="text-xl font-heading font-bold text-brand-navy mb-2">
+                Continuous Improvement
+              </h3>
+
+              <p className="text-gray-600 leading-7">
+                Evaluasi dan peningkatan sistem dilakukan secara berkala
+                agar proses produksi selalu mengikuti perkembangan teknologi
+                dan kebutuhan pelanggan.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </motion.div>
+
+    </div>
+
+  </div>
+</section>
 
     
   </main>

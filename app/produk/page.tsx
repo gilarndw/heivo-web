@@ -1,7 +1,7 @@
 "use client";
 import { motion, Variants } from 'framer-motion';
 import Button from '@/components/ui/button';
-import { Zap, HardHat, Check } from 'lucide-react';
+import { Zap, HardHat, Check, Download, FileText } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -99,9 +99,29 @@ export default function KatalogProduk() {
 
                 </div>
 
+                <div className='mt-8 space-y-3'>
                 <motion.div whileHover={{scale: 1.03}} whileTap={{scale: 0.97}}>
-              <Link href="/kontak"><Button variant="outline" className="w-full">Minta Penawaran</Button></Link>
+                  <a
+                    href="/catalogs/Katalog-MCB-HEIVO.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button
+                      variant="outline"
+                      className="w-full flex items-center justify-center gap-2"
+                    >
+                      <FileText size={18} />
+                      Lihat Katalog
+                    </Button>
+                  </a>
+                </motion.div>
+              
+              <motion.div whileHover={{scale: 1.03}} whileTap={{scale: 0.97}}>
+              <Link href="/kontak"><Button variant="primary" className="w-full">Minta Penawaran</Button></Link>
               </motion.div>
+                  
+                </div>
+
 
               </div>
               
@@ -179,10 +199,29 @@ export default function KatalogProduk() {
                   </div>
 
                 </div>
-
+                
+                <div className='mt-8 space-y-3'>
                 <motion.div whileHover={{scale: 1.03}} whileTap={{scale: 0.97}}>
-              <Link href="/kontak"><Button variant="outline" className="w-full">Minta Penawaran</Button></Link>
+                  <a
+                    href="/catalogs/Katalog-MCB-HEIVO.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button
+                      variant="outline"
+                      className="w-full flex items-center justify-center gap-2"
+                    >
+                      <FileText size={18} />
+                      Lihat Katalog
+                    </Button>
+                  </a>
+                </motion.div>
+              
+              <motion.div whileHover={{scale: 1.03}} whileTap={{scale: 0.97}}>
+              <Link href="/kontak"><Button variant="primary" className="w-full">Minta Penawaran</Button></Link>
               </motion.div>
+                  
+                </div>
 
               </div>
               
