@@ -12,7 +12,7 @@ const navigation = [
   { name: 'Tentang Kami', href: '/tentang-kami' },
   { name: 'Produk', href: '/produk' },
   { name: 'Standar Mutu', href: '/sertifikasi' },
-  { name: 'Proyek', href: '/proyek' },
+  // { name: 'Proyek', href: '/proyek' },
 ];
 
 export default function Header() {
@@ -27,7 +27,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-soft py-3' : 'bg-brand-navy py-5'}`}>
+    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-soft py-3' : 'bg-brand-navy py-4'}`}>
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center">
           <Image src={isScrolled ? "/images/logo-HEIVO.png" : "/images/logo-HEIVO White.svg"}

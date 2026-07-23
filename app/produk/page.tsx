@@ -133,7 +133,7 @@ export default function KatalogProduk() {
             transition={{duration: 0.25}} 
             className="group overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-soft hover:shadow-xl transition-all duration-500">
               <div className="relative h-72 overflow-hidden bg-gray-50">
-                <Image src="/images/kwh-2.jpg" alt="kwh meter" fill className="object-cover transition-transform duration-700 group-hover:scale-105"/>
+                <Image src="/images/kwh-1.png" alt="kwh meter" fill className="object-cover object-[center_20%] transition-transform duration-700 group-hover:scale-105"/>
               </div>
               <div className="p-8">
                 <span className="inline-flex rounded-full bg-brand-blue/10 px-3 py-1 text-xs font-semibold text-brand-blue mb-4">
@@ -199,7 +199,7 @@ export default function KatalogProduk() {
                   </div>
 
                 </div>
-                
+
                 <div className='mt-8 space-y-3'>
                 <motion.div whileHover={{scale: 1.03}} whileTap={{scale: 0.97}}>
                   <a

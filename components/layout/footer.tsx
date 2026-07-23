@@ -27,7 +27,7 @@ export default function Footer() {
           <div>
             <h4 className="font-heading font-bold text-white text-lg mb-6">Navigasi Cepat</h4>
             <ul className="space-y-4">
-              {['Beranda', 'Tentang Kami', 'Katalog Produk', 'Sertifikasi Mutu', 'Proyek & Portofolio'].map((item, index) => {
+              {['Beranda', 'Tentang Kami', 'Katalog Produk', 'Sertifikasi Mutu'].map((item, index) => {
                 const links = ['/', '/tentang-kami', '/produk', '/sertifikasi', '/proyek'];
                 return (
                   <li key={item}>
