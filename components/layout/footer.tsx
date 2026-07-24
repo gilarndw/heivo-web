@@ -44,7 +44,7 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start text-gray-400 text-sm">
                 <MapPin size={18} className="mr-3 text-brand-blue flex-shrink-0 mt-0.5" />
-                <span><strong className="text-gray-200 block mb-1">Pabrik (Factory):</strong>Cikande, Banten, Indonesia</span>
+                <span><strong className="text-gray-200 block mb-1">Pabrik (Factory):</strong>Jl. Raya Cikande Rangkasbitung KM 03, Gabus, Kopo, Kabupaten Serang, Banten, Indonesia 42124</span>
               </li>
                {/*<li className="flex items-start text-gray-400 text-sm">
                 <MapPin size={18} className="mr-3 text-brand-blue flex-shrink-0 mt-0.5" />
@@ -70,10 +70,10 @@ export default function Footer() {
         </div>
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-sm text-center md:text-left">&copy; {currentYear} PT Hiro Electric Industries. All Rights Reserved.</p>
-          <div className="flex items-center gap-6 text-sm text-gray-500">
+          {/* <div className="flex items-center gap-6 text-sm text-gray-500">
             <Link href="#" className="hover:text-white transition-colors">Kebijakan Privasi</Link>
             <Link href="#" className="hover:text-white transition-colors">Syarat & Ketentuan</Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

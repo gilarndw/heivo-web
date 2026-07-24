@@ -93,15 +93,15 @@ export default function TentangKami() {
       {/* Card 2 */}
       <StatisticCard
         icon={<ShieldCheck size={36} />}
-        number={90}
+        number={70}
         suffix="%"
-        title="Komitmen TKDN"
+        title="Nilai TKDN"
       />
 
       {/* Card 3 */}
       <StatisticCard
         icon={<Building2 size={36} />}
-        number={20}
+        number={10}
         suffix="+"
         title="Tahun Pengalaman"
       />

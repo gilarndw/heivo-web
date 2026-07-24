@@ -20,14 +20,38 @@ export async function POST(request: Request) {
 
     // 2. Kirim Notifikasi ke Tim Sales HEIVO
     await resend.emails.send({
-      from: 'Heivo Support <onboarding@resend.dev>',
-      to: 'made26gilang@gmail.com',
+      from: 'Heivo RFQ <rfq@hiro-electric.id>',
+      to: 'support@hiro-electric.id',
+      replyTo: email,
       subject: `RFQ Baru dari ${name}`,
       html: `
-        <h2>Permintaan Penawaran (RFQ)</h2>
-        <p><strong>Nama:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Pesan:</strong> ${message}</p>
+        <div style="font-family:Arial,sans-serif;padding:24px;">
+          <h2 style="color:#0056D2;">
+            Permintaan Penawaran Baru
+          </h2>
+
+          <table cellpadding="8" cellspacing="0">
+            <tr>
+              <td><strong>Nama</strong></td>
+              <td>${name}</td>
+            </tr>
+            <tr>
+              <td><strong>Email</strong></td>
+              <td>${email}</td>
+            </tr>
+            <tr>
+              <td><strong>Pesan</strong></td>
+              <td>${message}</td>
+            </tr>
+          </table>
+
+          <hr />
+
+          <p>
+            Email ini dikirim otomatis dari website
+            <strong>PT Hiro Electric Industries</strong>.
+          </p>
+        </div>
       `,
     });
 

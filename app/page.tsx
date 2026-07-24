@@ -46,7 +46,7 @@ export default function Home() {
         <div className="container mx-auto px-6 text-center">
           <p className="text-sm font-semibold text-gray-500 mb-6 uppercase tracking-wider">Diproduksi & Diakui Sesuai Standar Nasional & Internasional</p>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale font-heading font-bold text-xl">
-            <span>SNI</span><span>ISO 9001</span><span>ISO 14001</span><span>SMK3</span><span>TKDN</span>
+            <span>SNI</span><span>ISO 9001</span><span>ISO 14001</span><span>ISO 45001</span><span>TKDN</span>
           </div>
         </div>
       </section>

@@ -367,13 +367,13 @@ export default function SertifikasiHero() {
           <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/70 via-transparent to-transparent" />
 
           {/* Floating Badge */}
-          <div className="absolute bottom-8 left-8 bg-white rounded-2xl shadow-xl px-6 py-5">
+          <div className="absolute bottom-8 left-8 rounded-2xl border border-white/20 bg-white/10 backdrop-blur-xl shadow-2xl px-6 py-5">
 
-            <p className="text-3xl font-bold text-brand-blue">
+            <p className="text-3xl font-bold text-white">
               100%
             </p>
 
-            <p className="text-sm text-brand-dark">
+            <p className="text-sm text-gray-200">
               Quality Inspection
             </p>
 
